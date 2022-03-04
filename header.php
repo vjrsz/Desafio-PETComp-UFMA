@@ -37,7 +37,7 @@
                         <img src="./assets/svg/drop.svg">
                     </a>
                     <ul>
-                        <li><a href="./">Biblioteca PETComp</a></li>
+                        <li><a href="./biblioteca-petcomp-monitoria.php">Biblioteca PETComp</a></li>
                         <li><a href="./produtos-podcomp.php">PodCast</a></li>
                     </ul>
                 </li>
