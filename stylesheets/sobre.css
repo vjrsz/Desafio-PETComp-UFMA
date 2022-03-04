@@ -1,0 +1,72 @@
+@charset "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+@import "./style.css";
+@import "./artigo.css";
+
+.galery{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 150px);
+    gap: 25px;
+}
+    .galery figure{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        box-shadow: 0px 10px 10px #00000050;
+        transition: 0.5s;
+    }
+    .galery figure:hover{
+        width: 100%;
+        height: 101%;
+    }
+        .galery figure img{
+            width: max-content;
+            height: inherit;
+        }
+    .galery :nth-child(1){
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .galery :nth-child(2){
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .galery :nth-child(3){
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .galery :nth-child(4){
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .galery :nth-child(5){
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 5;
+    }
+    .galery :nth-child(6){
+        grid-column-start: 1;
+        grid-column-end: 4;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }
+    .galery :nth-child(7){
+        grid-column-start: 4;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 7;
+    }

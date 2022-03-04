@@ -1,0 +1,54 @@
+@charset "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+@import "./style.css";
+@import "./artigo.css";
+
+.galery{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+    .card{
+        display: flex;
+        box-shadow: 5px 5px 5px 5px #00000050;
+    }
+        .card div:nth-child(1){
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 30%;
+            background-color: #fff;
+        }
+            .card div:nth-child(1) img{
+                width: 100%;
+            }
+        .card div:nth-child(2){
+            display: flex;
+            flex-direction: column;
+            background-color: #343564;
+            padding: 20px;
+            width: 70%;
+            gap: 20px;
+        }
+            .card div:nth-child(2) h1{
+                color: white;
+                font-size: 24px;
+            }
+            .card div:nth-child(2) p{
+                word-spacing: 5px;
+                color: white;
+                font-size: 16px;
+            }
+            .card div:nth-child(2) a{
+                padding: 10px;
+                width: 100px;
+                color: #343564;
+                background-color: #fff;
+                border-radius: 5px;
+                font-size: 16px;
+            }
+                .card div:nth-child(2) a:hover{
+                    color:#fff;
+                    background-color: #61dafb;
+                }

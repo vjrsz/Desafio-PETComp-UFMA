@@ -1,0 +1,190 @@
+@charset "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+@import "./style.css";
+
+main{
+    background-image: url("./../assets/bg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.slider{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 500px;
+    padding: 50px 0px;
+}
+    .slider div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        background-color: #ffffff90;
+    }
+        .slider div ul li{
+            display: none; 
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            column-gap:20px;
+        }
+            .slider a{
+                padding: 10px 20px;
+                border-radius: 5px;
+                background-color: #33c3ff;
+                color: #fff;
+                transition: 0.5s;
+            }
+            .slider a:hover{ 
+                background-color: #343564; 
+            }
+        .fade li{
+            -webkit-animation-name: fade;
+            -webkit-animation-duration: 1.5s;
+            animation-name: fade;
+            animation-duration: 1.5s;
+        }
+              
+            @-webkit-keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+              
+            @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+            }
+    .slider button{
+        position: absolute;
+        outline: none;
+        border: none;
+        background-color: #ccc;
+        width: 40px;
+        height: 60px;
+        font-size: 28px;
+        top: 50%
+    }
+        .slider button.left{ left: 0; }
+        .slider button.rigth{ right: 0; }
+.about{
+    display: flex;
+    padding: 25px;
+    background-color: #eee;
+}
+    .about div{
+        margin: 0px 20px;
+    }
+    .about p,.about h1,.about a{
+        margin: 10px 0px;
+    }
+    .about a{
+        color: blue;
+    }
+    .galery{
+        display: grid;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(3, 150px);
+        gap: 25px;
+    }
+        .galery figure{
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            box-shadow: 0px 10px 10px #00000050;
+            transition: 0.5s;
+        }
+        .galery figure:hover{
+            width: 100%;
+            height: 101%;
+        }
+            .galery figure img{
+                width: max-content;
+                height: inherit;
+            }
+        .galery .p1{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 1;
+            grid-row-end: 2;
+        }
+        .galery .p2{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .galery .p3{
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start: 2;
+            grid-row-end: 4;
+        }
+        .galery .p4{
+            grid-column-start: 2;
+            grid-column-end: 4;
+            grid-row-start: 3;
+            grid-row-end: 4;
+        }
+.activities{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: max-content;
+    padding: 50px;
+}   
+    .activities div{
+        width: 50%;
+        padding: 0px 50px;
+    }
+    .activities p,.activities h1{ color: #fff; }
+    .activities p{ font-size: 16px; }
+    .activities ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 50px;
+    }
+        .activities ul li{
+            display: flex;
+            flex-direction: column;
+            justify-items: space-between;
+            gap: 25px;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            transition: 0.5s;
+        }
+        .activities ul li:hover{
+            box-shadow: 5px 5px 10px 10px #00000050;
+        }
+        .activities ul li img{ 
+            background-color: #343564;
+            width: 50px;
+            height: 50px;
+            padding: 10px;
+            border-radius: 10px;
+
+        }
+        .activities ul li p{ 
+            color: #000; 
+            font-weight: 700;
+        }
+        .activities ul li a{ 
+            width: 120px;
+            text-align: center;
+            padding: 10px 20px;
+            border: none;
+            background-color: #eee;
+            border-radius: 10px;
+            transition: 0.5s;
+        }
+        .activities ul li a:hover{ 
+            color: #fff;
+            background-color: #33c3ff;
+        }

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+@import "./style.css";
+@import "./artigo.css";
+
+.galery{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.galery img{
+    width: 100%;
+    height: 240px;
+    background-color: #ccc;
+    padding: 25px;
+}
+.card{
+    flex-direction: column;
+    width: 350px;
+    height: 400px;
+    background-color: #060b3f;
+    border-radius: 10px;
+}
+    .card h1{
+        padding: 20px 10px;
+        font-size: 24px;
+        color: #fff;
+    }
+.tools{
+    display: flex;
+    margin: 10px;
+    gap: 20px;
+}
+    .tools span{
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+        text-transform: uppercase;
+    }
+.php{
+    background-color: #4f5d95;
+}
+.html{
+    background-color: #e34c26;
+}
+.css{
+    background-color: #563d7c;
+}
+.js{
+    background-color: #f1e05a;
+}
+.react-native{
+    background-color: #61dafb;
+}

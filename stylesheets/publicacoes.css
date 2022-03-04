@@ -1,0 +1,55 @@
+@charset "UTF-8";
+@import "./header.css";
+@import "./footer.css";
+@import "./style.css";
+@import "./artigo.css";
+@import "./busca.css";
+
+.card{
+    display: grid;
+    grid-template-columns: repeat(3, 33.33%);
+    gap: 25px;
+    margin: 20px 0px;
+    width: fit-content;
+    height: inherit;
+    border-bottom: 1px solid #060b3f;
+}
+    .card h1{
+        font-size: 20px;
+    }
+    .card .links img{
+        width: 25px;
+        height: 25px;
+        margin: 0px 10px;
+    }
+    .card .links, .card .authors {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+    .card .links :nth-child(1), .card .authors :nth-child(1){
+        font-size: 12px;
+        letter-spacing: 3px;
+        font-weight: 900;
+    }
+    .card .authors :nth-child(2){
+        font-size: 14px;
+    }
+    .card .buttons{
+        padding: 20px 0px;
+    }
+    .card .buttons a{
+        outline: none;
+        background-color: #0000;
+        border: 1px solid #060b3f;
+        border-radius: 25px;
+        padding: 10px 25px;
+    }
+    .card .buttons a:hover{
+        background-color: #060b3f;
+        color:white;
+    }
+    .card .buttons a img{
+        width: max-content;
+        height: max-content;
+    }
